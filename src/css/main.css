@@ -1,0 +1,195 @@
+
+/* filtros */
+.container{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 14px;
+    position: relative;
+    margin-top: 100px;
+    
+  
+}
+
+.produtos{
+    margin-bottom: 40px;
+    color: blueviolet;
+    font-family: font-family "Roboto" sans-serif;
+    font-weight: bold;
+}
+
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 30px;
+    
+}
+
+
+.categorias-cartas{
+    display: flex;
+    flex-direction: column;
+    flex:10%
+}
+
+.categorias-cartas label{
+    color: blueviolet;
+    font-family: font-family "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.categorias-cartas select{
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid blueviolet ;
+    font-weight:500;
+    background-color: rgb(244, 240, 244); 
+   
+}
+
+.preco-cartas{
+    display: flex;
+    flex-direction: column;
+    flex: 10%;
+    
+}
+
+.preco-cartas label{
+   color: blueviolet;
+    font-family: font-family "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+
+    
+}
+
+.preco-cartas .preco{
+     height: 40px;
+    border-radius: 5px;
+    border: 2px solid blueviolet ;
+    font-weight:500;
+    background-color:  rgb(244, 240, 244);
+    outline: none;
+    padding: 0 10px;
+}
+
+.btn-filtrar{
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: blueviolet;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-filtrar:hover{
+    transform: scale(1.03);
+}
+
+.btn-filtrar:active{
+    transform: scale(1);
+}
+
+/* lista de cartas */
+.cartas{
+    list-style-type:none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+
+.cartas .carta{
+    
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color:  white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    
+}
+
+.cartas .carta img{
+    background-color: rgb(244, 240, 244);
+    width: 100%;
+    padding: 20px 0;
+    margin-top: -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+    
+}
+
+.carta img:hover{
+    transform: scale(1.05);
+}
+
+.cartas .informacoes{
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   width: 100%;
+   gap: 10px;
+   background-color: white ;
+   margin-top: 10px;
+    font-family: font-family "Roboto" sans-serif;
+   
+   
+}
+
+.cartas .informacoes h2{
+    font-size: 30px;
+}
+
+.cartas .informacoes .preco{
+    color: rgb(86, 218, 86);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cartas .informacoes button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.informacoes button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px ){
+    .cartas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .cartas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn-filtrar{
+        display: none;
+    }
+}
