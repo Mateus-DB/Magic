@@ -26,6 +26,7 @@ CSS3 → Estilização e layout
 
 JavaScript (ES6+) → Interatividade e sistema de filtragem
 
+Deploy: https://mateus-db.github.io/Magic/
 
 🚀 Como Executar o Projeto
 
